@@ -25,7 +25,9 @@
 // Math.Random
 // Math.Floor
 
-let tmp = "";
+let tmpCor = "";
+let tmpImg = "";
+let img = ["../img/banner-lateral-1.png","../img/banner-lateral-2.png","../img/banner-lateral-3.png"]
 
 function mudarCor(){
 
@@ -46,8 +48,43 @@ function mudarCor(){
     const banner2 = document.querySelector(".banner-2");
     banner2.style.backgroundColor = `rgb(${r},${g},${b})`;
 
+    // const img1 = document.querySelector(".img1");
+    // img1.style.backgroundColor = `rgb(${r},${g},${b})`;
+  
+    // const img2 = document.querySelector(".img2");
+    // img2.style.backgroundColor = `rgb(${r},${g},${b})`;
+  
+    // const img3 = document.querySelector(".img3");
+    // img3.style.backgroundColor = `rgb(${r},${g},${b})`;
+
     tmp = setTimeout(mudarCor, 500);
 
 }
+function mudarImagens1(){
+
+    let imgIndex = Math.floor(Math.random() * img.length);
+    let imgSrc = img[imgIndex];
+  
+    const img1 = document.querySelector(".img1");
+    img1.src = imgSrc;
+  
+    const img2 = document.querySelector(".img2");
+    img2.src = imgSrc;
+  
+    const img3 = document.querySelector(".img3");
+    img3.src = imgSrc;
+
+    const img4 = document.querySelector(".img4");
+    img4.src = imgSrc;
+
+    const img5 = document.querySelector(".img5");
+    img5.src = imgSrc;
+
+    const img6 = document.querySelector(".img6");
+    img6.src = imgSrc;
+  
+    tmpImagens = setTimeout(mudarImagens1, 1000);
+}
 
 mudarCor();
+mudarImagens1();
