@@ -16,6 +16,7 @@
     flex-grow: 1;
     background-color: wheat;
     color: darkslategrey;
+    position: relative;
 }
 
 .conteudo{
@@ -28,6 +29,7 @@
     flex-grow: 1;
     background-color: bisque;
     color: darkslategrey;
+    position: relative;
 }
 
 .rodape{
@@ -37,4 +39,10 @@
     height: 20vh;
     background-color: blanchedalmond;
     color: darkslategrey;
+}
+  
+.banner-1 img, .banner-2 img {
+    position: absolute;
+    top: 20px;
+    left: 80px;
 }
